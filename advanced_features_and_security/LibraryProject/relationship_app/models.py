@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
 class Author(models.Model):
@@ -50,3 +51,4 @@ class UserProfile(models.Model):
             ("can_change_book", "Can change a book"),
             ("can_delete_book", "Can delete a book"),
         ]
+
