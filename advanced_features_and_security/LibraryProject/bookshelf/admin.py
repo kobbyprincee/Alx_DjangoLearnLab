@@ -35,3 +35,5 @@ add_fieldsets = (
 list_display = ('username', 'email', 'date_of_birth', 'is_active', 'is_staff', 'is_superuser')
 search_fields = ('username', 'email')
 ordering = ('email',)
+
+admin.site.register(CustomUser, CustomUserAdmin)
